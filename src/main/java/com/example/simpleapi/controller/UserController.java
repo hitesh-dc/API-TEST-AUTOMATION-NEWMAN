@@ -30,6 +30,7 @@ public class UserController {
     public ResponseEntity<User> create(@RequestBody User user) {
         User created = svc.save(user);
         return ResponseEntity.created(URI.create("/api/users/" + created.getId())).body(created);
+        
     }
 
     @PutMapping("/{id}")
