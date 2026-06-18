@@ -15,6 +15,7 @@ public class UserService {
     public UserService() {
         save(new User(null, "Alice", "alice@example.com"));
         save(new User(null, "Bob", "bob@example.com"));
+        save(new User(null, "Hitesh", "hitesh@example.com"));
     }
 
     public List<User> findAll() {
